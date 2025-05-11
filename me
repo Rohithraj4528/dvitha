@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <string.h> // Include string.h for string manipulation
+
+int main() {
+    char a[100];
+    char b[100]; 
+    char concatenated[200]; 
+    printf("Enter string a:\n");
+    scanf("%s", a); 
+    printf("Enter string b:\n");
+    scanf("%s", b); 
+    strcpy(concatenated, a); 
+    strcat(concatenated, b); 
+
+    printf("Concatenation of two strings is: %s\n", concatenated);
+    printf("Hashtag of the concatenated string: #%s\n", concatenated);
+
+    return 0;
+}
